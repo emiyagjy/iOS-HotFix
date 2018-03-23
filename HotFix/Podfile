@@ -1,0 +1,12 @@
+platform :ios, '9.0'
+use_frameworks!
+
+xcodeproj 'HotFix.xcodeproj'
+
+def myPods
+
+end
+
+target 'ShijiSwift' do
+    myPods
+end

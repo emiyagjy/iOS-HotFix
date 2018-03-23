@@ -1,0 +1,8 @@
+
+fixInstanceMethodReplace('TestCrash', 'getArrayValue:', function(instance, originInvocation, originArguments){
+if (originArguments[0] == undefined) {
+    console.log(' 传入的值不能为nil ');
+} else {
+    runInvocation(originInvocation); // 继续走原来的方法
+}
+});
